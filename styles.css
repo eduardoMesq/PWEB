@@ -11,6 +11,15 @@ header, footer {
     text-align: center;
     padding: 30px;
 }
+
+.centro{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  border: 2px dotted rgb(96 139 168);
+
+}
 /* estilizar o menu de navegação*/
 nav ul {
     list-style: none;
@@ -76,6 +85,10 @@ form input:focus, form textarea:focus {
     outline: none;
 }
 
+textarea{
+    resize: none;
+}
+
 /* estilizar o botão */
 
 .btn-enviar {
@@ -91,6 +104,10 @@ form input:focus, form textarea:focus {
     transition: background-color 0.3s ease, transform 0.2s ease;    /* estilos de transição*/
 }
 
+.btn-enviar:hover {
+    background-color: grey;
+    transform: scale(1.05);
+}
 .btn-enviar:hover {
     background-color: grey;
     transform: scale(1.05);
