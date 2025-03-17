@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.centro{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  border: 2px dotted rgb(96 139 168);
+
+}
+/* estilizar o menu de navegação*/
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* efeito hover nos links de meunu */
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* estilizar com flexbox */
+section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+article {
+    flex: 2;
+    padding: 20px;
+    background-color: white;
+}
+
+aside {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+}
+
+/* estilizar o formulário */
+form {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    width: 96%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+form input:focus, form textarea:focus {
+    border-color: grey;
+    outline: none;
+}
+
+textarea{
+    resize: none;
+}
+
+/* estilizar o botão */
+
+.btn-enviar {
+    font-size: 12px;                                                /* tamanho da fonte de texto*/
+    font-family: Arial, sans-serif;                                 /* familia e tipo de letra*/
+    padding: 10px 20px;                                             /* espaçamento interno*/
+    background-color: grey;                                       /* cor de fundo do botão */
+    border-radius: 5px;                                             /* arredondar a borda */
+    border: none;                                                   /* remover a borda*/
+    color: white;                                                 /* cor do botão */
+    cursor: pointer;                                                /* mudar o cursor para pointer */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);                   /* sombra */
+    transition: background-color 0.3s ease, transform 0.2s ease;    /* estilos de transição*/
+}
+
+.btn-enviar:hover {
+    background-color: grey;
+    transform: scale(1.05);
+}
